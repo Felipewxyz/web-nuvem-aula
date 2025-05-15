@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aplicação Web na Nuvem</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 2rem; background-color: #f5f5f5; }
-    header { background-color: #4CAF50; padding: 1rem; color: white; text-align: center; border-radius: 10px; }
-    main { margin-top: 2rem; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    button { background-color: #4CAF50; color: white; padding: 0.5rem 1rem; border: none; border-radius: 5px; cursor: pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaunaBR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        header {
+            background-color: #1b5e20;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #388e3c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #1b5e20;
+        }
+        .animal {
+            margin-bottom: 30px;
+        }
+        .animal img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Minha Primeira App Web em Nuvem</h1>
-  </header>
-  <main>
-    <p>Essa é uma aplicação simples hospedada na nuvem. Clique no botão abaixo para interagir com o JavaScript:</p>
-    <button onclick="mostrarMensagem()">Clique aqui</button>
-    <p id="mensagem"></p>
-  </main>
 
-  <script>
-    function mostrarMensagem() {
-      document.getElementById("mensagem").innerText = "Aplicação funcionando com sucesso na nuvem!";
-    }
-  </script>
+    <header>
+        <h1>Fauna Brasileira</h1>
+        <p>Conheça alguns dos incríveis animais que habitam o Brasil</p>
+    </header>
+
+    <nav>
+        <a href="#onca">Onça-pintada</a>
+        <a href="#arara">Arara-azul</a>
+        <a href="#tamar">Tartaruga-marinha</a>
+    </nav>
+
+    <section class="animal" id="onca">
+        <h2>Onça-pintada</h2>
+        <img src="imagens/Onca-capa-blog.png" alt="Onça-pintada">
+        <p>A onça-pintada é o maior felino das Américas. Ela habita principalmente as florestas tropicais como a Amazônia e o Pantanal. É uma espécie símbolo da fauna brasileira.</p>
+    </section>
+
+    <section class="animal" id="arara">
+        <h2>Arara-azul</h2>
+        <img src="imagens/arara-azul-nat-geo.webp" alt="Arara-azul">
+        <p>A arara-azul é uma das aves mais emblemáticas do Brasil. Está ameaçada de extinção devido à destruição do habitat e ao tráfico de animais silvestres.</p>
+    </section>
+
+    <section class="animal" id="tamar">
+        <h2>Tartaruga-marinha</h2>
+        <img src="imagens/hawksbill_sea_turtle_carey_de_concha_5840602412.avif" alt="Tartaruga-marinha">
+        <p>As tartarugas-marinhas são espécies protegidas no Brasil. O Projeto Tamar atua na preservação desses animais em várias praias do litoral brasileiro.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Fauna Brasileira | Desenvolvido por Felipe</p>
+    </footer>
+
 </body>
 </html>
+
